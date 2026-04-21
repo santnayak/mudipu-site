@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudipu Design System - Visual Reference</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #FAFAFA;
+      color: #252830;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #EF4444;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid #E5E7EB;
+      padding-bottom: 10px;
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+      margin: 20px 0 10px;
+    }
+    
+    .section {
+      margin-bottom: 60px;
+    }
+    
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      background: #EF4444;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+    }
+    
+    /* Colors */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    
+    .color-card {
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .color-swatch {
+      height: 100px;
+    }
+    
+    .color-info {
+      padding: 15px;
+      background: white;
+    }
+    
+    .color-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .color-value {
+      font-size: 0.875rem;
+      color: #6C727F;
+    }
+    
+    /* Typography */
+    .type-scale {
+      margin: 20px 0;
+    }
+    
+    .type-item {
+      margin: 15px 0;
+      padding: 10px;
+      background: white;
+      border: 1px solid #E5E7EB;
+      border-radius: 4px;
+    }
+    
+    .type-label {
+      font-size: 0.75rem;
+      color: #6C727F;
+      margin-bottom: 5px;
+    }
+    
+    /* Components */
+    .component-demo {
+      padding: 40px;
+      background: white;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    
+    .card-demo {
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 30px;
+      background: white;
+      transition: all 0.3s;
+      max-width: 300px;
+    }
+    
+    .card-demo:hover {
+      border-color: rgba(239, 68, 68, 0.5);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);
+    }
+    
+    .icon-container {
+      width: 48px;
+      height: 48px;
+      background: rgba(239, 68, 68, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      color: #EF4444;
+      font-size: 24px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+    }
+    
+    .btn-primary {
+      background: #EF4444;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #252830;
+      border: 2px solid #E5E7EB;
+    }
+    
+    .btn-secondary:hover {
+      background: #F4F5F6;
+    }
+    
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    
+    .badge-muted {
+      background: #F4F5F6;
+      color: #6C727F;
+    }
+    
+    .badge-success {
+      background: rgba(34, 197, 94, 0.2);
+      color: #22C55E;
+    }
+    
+    code {
+      background: #F4F5F6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Mudipu Design System</h1>
+    <p>Visual reference for all Mudipu frontend projects</p>
+    <p style="color: #6C727F; margin-top: 10px;">Version 1.0.0 • April 2026</p>
+    
+    <!-- Logo -->
+    <div class="section">
+      <h2>Logo</h2>
+      <div class="logo" style="font-size: 1rem;">
+        <div class="logo-dot" style="width: 6px; height: 6px;"></div>
+        <span>mudipu</span>
+        <code>Small</code>
+      </div>
+      <div class="logo" style="font-size: 1.25rem;">
+        <div class="logo-dot"></div>
+        <span>mudipu</span>
+        <code>Medium</code>
+      </div>
+      <div class="logo" style="font-size: 1.875rem;">
+        <div class="logo-dot" style="width: 12px; height: 12px;"></div>
+        <span>mudipu</span>
+        <code>Large</code>
+      </div>
+    </div>
+    
+    <!-- Colors -->
+    <div class="section">
+      <h2>Colors</h2>
+      
+      <h3>Primary</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #EF4444;"></div>
+          <div class="color-info">
+            <div class="color-name">Primary Red</div>
+            <div class="color-value">#EF4444</div>
+            <div class="color-value">HSL: 0 72.2% 50.6%</div>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Light Theme</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #FAFAFA;"></div>
+          <div class="color-info">
+            <div class="color-name">Background</div>
+            <div class="color-value">#FAFAFA</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #252830;"></div>
+          <div class="color-info">
+            <div class="color-name">Foreground</div>
+            <div class="color-value">#252830</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #E5E7EB;"></div>
+          <div class="color-info">
+            <div class="color-name">Card</div>
+            <div class="color-value">#FFFFFF</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #F4F5F6;"></div>
+          <div class="color-info">
+            <div class="color-name">Muted</div>
+            <div class="color-value">#F4F5F6</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #6C727F;"></div>
+          <div class="color-info">
+            <div class="color-name">Muted Text</div>
+            <div class="color-value">#6C727F</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #E5E7EB;"></div>
+          <div class="color-info">
+            <div class="color-name">Border</div>
+            <div class="color-value">#E5E7EB</div>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Dark Theme</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #0B0F19;"></div>
+          <div class="color-info">
+            <div class="color-name">Background</div>
+            <div class="color-value">#0B0F19</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #F9FAFB;"></div>
+          <div class="color-info">
+            <div class="color-name">Foreground</div>
+            <div class="color-value">#F9FAFB</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #1E293B;"></div>
+          <div class="color-info">
+            <div class="color-name">Muted</div>
+            <div class="color-value">#1E293B</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #94A3B8;"></div>
+          <div class="color-info">
+            <div class="color-name">Muted Text</div>
+            <div class="color-value">#94A3B8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Typography -->
+    <div class="section">
+      <h2>Typography</h2>
+      <p style="margin-bottom: 20px;">Font Family: <code>JetBrains Mono</code></p>
+      
+      <div class="type-scale">
+        <div class="type-item">
+          <div class="type-label">text-7xl / 72px</div>
+          <div style="font-size: 4.5rem; font-weight: 700;">Heading 1</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-5xl / 48px</div>
+          <div style="font-size: 3rem; font-weight: 700;">Heading 2</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-4xl / 36px</div>
+          <div style="font-size: 2.25rem; font-weight: 700;">Heading 3</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-2xl / 24px</div>
+          <div style="font-size: 1.5rem; font-weight: 600;">Heading 4</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-xl / 20px</div>
+          <div style="font-size: 1.25rem;">Subheading / Lead</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-base / 16px</div>
+          <div style="font-size: 1rem;">Body text - Regular paragraph content</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-sm / 14px</div>
+          <div style="font-size: 0.875rem; color: #6C727F;">Small text - Captions and descriptions</div>
+        </div>
+        <div class="type-item">
+          <div class="type-label">text-xs / 12px</div>
+          <div style="font-size: 0.75rem; color: #6C727F;">Extra small - Labels and badges</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Components -->
+    <div class="section">
+      <h2>Components</h2>
+      
+      <h3>Buttons</h3>
+      <div class="component-demo">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+      </div>
+      
+      <h3>Card</h3>
+      <div class="component-demo">
+        <div class="card-demo">
+          <div class="icon-container">🛠️</div>
+          <h3 style="margin-bottom: 10px;">Card Title</h3>
+          <p style="color: #6C727F; font-size: 0.875rem; margin-bottom: 15px;">
+            Card description text goes here. Hover to see the effect.
+          </p>
+          <span class="badge badge-success">v1.0 Available</span>
+        </div>
+      </div>
+      
+      <h3>Badges</h3>
+      <div class="component-demo">
+        <span class="badge badge-muted">Coming Soon</span>
+        <span class="badge badge-success">Available</span>
+      </div>
+    </div>
+    
+    <!-- Spacing -->
+    <div class="section">
+      <h2>Spacing</h2>
+      <div style="background: white; padding: 20px; border: 1px solid #E5E7EB; border-radius: 8px;">
+        <div style="margin-bottom: 10px;"><strong>Container:</strong> <code>max-width: 1200px</code></div>
+        <div style="margin-bottom: 10px;"><strong>Padding X:</strong> <code>px-6 (1.5rem / 24px)</code></div>
+        <div style="margin-bottom: 10px;"><strong>Section Y:</strong> <code>py-24 (6rem / 96px)</code></div>
+        <div style="margin-bottom: 10px;"><strong>Card Padding:</strong> <code>p-8 (2rem / 32px)</code></div>
+        <div><strong>Card Gap:</strong> <code>gap-6 (1.5rem / 24px)</code></div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div style="margin-top: 80px; padding-top: 40px; border-top: 2px solid #E5E7EB; text-align: center; color: #6C727F;">
+      <div class="logo" style="justify-content: center; margin-bottom: 20px;">
+        <div class="logo-dot"></div>
+        <span>mudipu</span>
+      </div>
+      <p>Design System v1.0 • GPL-3.0 License</p>
+      <p style="margin-top: 10px;">© 2026 Mudipu</p>
+    </div>
+  </div>
+</body>
+</html>

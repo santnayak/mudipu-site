@@ -1,0 +1,206 @@
+{
+  "name": "Mudipu Design System",
+  "version": "1.0.0",
+  "description": "Design tokens for Mudipu frontend projects",
+  "license": "GPL-3.0",
+  
+  "brand": {
+    "name": "mudipu",
+    "tagline": "AI Agent Observability & Registry"
+  },
+
+  "logo": {
+    "symbol": "red-dot",
+    "color": "#EF4444",
+    "glow": "0 0 10px rgba(239, 68, 68, 0.5)",
+    "sizes": {
+      "sm": { "dot": "6px", "text": "16px" },
+      "md": { "dot": "8px", "text": "20px" },
+      "lg": { "dot": "12px", "text": "30px" }
+    }
+  },
+
+  "colors": {
+    "primary": {
+      "hsl": "0 72.2% 50.6%",
+      "hex": "#EF4444",
+      "rgb": "239, 68, 68"
+    },
+    "themes": {
+      "light": {
+        "background": { "hsl": "0 0% 98%", "hex": "#FAFAFA" },
+        "foreground": { "hsl": "220 13% 18%", "hex": "#252830" },
+        "card": { "hsl": "0 0% 100%", "hex": "#FFFFFF" },
+        "card-foreground": { "hsl": "220 13% 18%", "hex": "#252830" },
+        "muted": { "hsl": "220 14% 96%", "hex": "#F4F5F6" },
+        "muted-foreground": { "hsl": "220 9% 46%", "hex": "#6C727F" },
+        "border": { "hsl": "220 13% 91%", "hex": "#E5E7EB" },
+        "primary": { "hsl": "0 72.2% 50.6%", "hex": "#EF4444" },
+        "primary-foreground": { "hsl": "0 0% 100%", "hex": "#FFFFFF" }
+      },
+      "dark": {
+        "background": { "hsl": "222.2 84% 4.9%", "hex": "#0B0F19" },
+        "foreground": { "hsl": "210 40% 98%", "hex": "#F9FAFB" },
+        "card": { "hsl": "222.2 84% 4.9%", "hex": "#0B0F19" },
+        "card-foreground": { "hsl": "210 40% 98%", "hex": "#F9FAFB" },
+        "muted": { "hsl": "217.2 32.6% 17.5%", "hex": "#1E293B" },
+        "muted-foreground": { "hsl": "215 20.2% 65.1%", "hex": "#94A3B8" },
+        "border": { "hsl": "217.2 32.6% 17.5%", "hex": "#1E293B" },
+        "primary": { "hsl": "0 72.2% 50.6%", "hex": "#EF4444" },
+        "primary-foreground": { "hsl": "210 40% 98%", "hex": "#F9FAFB" }
+      }
+    },
+    "semantic": {
+      "success": { "hsl": "142 71% 45%", "hex": "#22C55E" },
+      "warning": { "hsl": "38 92% 50%", "hex": "#F59E0B" },
+      "destructive": { "hsl": "0 84.2% 60.2%", "hex": "#EF4444" }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "primary": "JetBrains Mono, monospace",
+      "fallback": "Consolas, Monaco, 'Courier New', monospace"
+    },
+    "fontWeights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "7xl": "4.5rem"
+    },
+    "lineHeights": {
+      "tight": 1.25,
+      "normal": 1.5,
+      "relaxed": 1.75
+    }
+  },
+
+  "spacing": {
+    "container": {
+      "maxWidth": "1200px",
+      "padding": "1.5rem"
+    },
+    "section": {
+      "paddingY": "6rem"
+    },
+    "card": {
+      "padding": "2rem",
+      "gap": "1.5rem"
+    }
+  },
+
+  "borderRadius": {
+    "sm": "0.25rem",
+    "default": "0.5rem",
+    "lg": "0.75rem",
+    "xl": "1rem",
+    "full": "9999px"
+  },
+
+  "shadows": {
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "default": "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+    "glow-primary": "0 0 10px rgba(239, 68, 68, 0.5)",
+    "glow-card": "0 10px 30px rgba(239, 68, 68, 0.2)"
+  },
+
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+
+  "animations": {
+    "fadeIn": {
+      "duration": "0.8s",
+      "easing": "ease-in"
+    },
+    "float": {
+      "duration": "3s",
+      "easing": "ease-in-out",
+      "iteration": "infinite"
+    },
+    "slideUp": {
+      "duration": "0.6s",
+      "easing": "ease-out"
+    }
+  },
+
+  "icons": {
+    "library": "lucide-react",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "common": {
+      "platform": "Activity",
+      "hub": "Globe",
+      "sdk": "Code",
+      "github": "Github",
+      "theme-dark": "Moon",
+      "theme-light": "Sun",
+      "back": "ArrowLeft",
+      "terminal": "Terminal",
+      "action": "Zap",
+      "health": "Heart",
+      "security": "Shield",
+      "search": "Search"
+    }
+  },
+
+  "components": {
+    "navigation": {
+      "height": "64px",
+      "blur": "8px",
+      "opacity": 0.8
+    },
+    "card": {
+      "borderWidth": "1px",
+      "borderRadius": "0.75rem",
+      "padding": "2rem",
+      "hoverBorderOpacity": 0.5,
+      "hoverShadow": "0 10px 30px rgba(239, 68, 68, 0.2)"
+    },
+    "button": {
+      "primary": {
+        "padding": "1rem 2rem",
+        "fontSize": "1.125rem",
+        "borderRadius": "0.5rem"
+      },
+      "secondary": {
+        "padding": "1rem 2rem",
+        "fontSize": "1.125rem",
+        "borderRadius": "0.5rem",
+        "borderWidth": "2px"
+      }
+    }
+  },
+
+  "metadata": {
+    "author": "Santosh Nayak",
+    "email": "santhoshnayak0903@gmail.com",
+    "repository": "github.com/santnayak/mudipu",
+    "lastUpdated": "2026-04-21"
+  }
+}
