@@ -1,7 +1,6 @@
 import { 
   Activity, 
   Code, 
-  Database, 
   Github, 
   Globe, 
   Heart, 
