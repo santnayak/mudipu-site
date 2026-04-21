@@ -8,7 +8,7 @@ export default function HomePageMinimal() {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-6 py-4">
-          <Logo size="sm" />
+          <Logo size="md" />
         </div>
       </nav>
 
@@ -109,7 +109,7 @@ export default function HomePageMinimal() {
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-            <Logo size="sm" />
+            <Logo size="md" />
             <div className="flex gap-6 text-sm text-muted-foreground">
               <Link to="/imprint" className="hover:text-primary transition">Imprint</Link>
               <span>|</span>
