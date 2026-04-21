@@ -1,34 +1,39 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Shield } from 'lucide-react'
 import Logo from '@/components/Logo'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border">
-        <div className="container mx-auto flex items-center justify-between px-6 py-4">
+        <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
           <Link to="/" className="transition hover:opacity-80">
             <Logo size="md" />
           </Link>
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-muted-foreground transition hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <ThemeToggle />
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-muted-foreground transition hover:text-foreground text-sm sm:text-base"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span className="hidden sm:inline">Back to Home</span>
+              <span className="sm:hidden">Back</span>
+            </Link>
+          </div>
         </div>
       </header>
 
       {/* Content */}
-      <div className="container mx-auto max-w-4xl px-6 py-16">
-        <div className="mb-12 text-center animate-fadeIn">
-          <h1 className="mb-4 text-5xl font-bold">Privacy Policy</h1>
-          <p className="text-muted-foreground">Last Updated: April 21, 2026</p>
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 py-8 sm:py-16">
+        <div className="mb-8 sm:mb-12 text-center animate-fadeIn">
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold">Privacy Policy</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">Last Updated: April 21, 2026</p>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-8 md:p-12 animate-fadeIn">
+        <div className="rounded-xl border border-border bg-card p-6 sm:p-8 md:p-12 animate-fadeIn">
           {/* TL;DR */}
           <div className="mb-8 rounded-lg border border-primary/30 bg-primary/10 p-6">
             <div className="flex items-start gap-4">

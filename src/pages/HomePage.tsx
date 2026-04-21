@@ -12,14 +12,16 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Logo from '@/components/Logo'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Logo size="sm" />
+          <ThemeToggle />
         </div>
       </nav>
 

@@ -1,38 +1,43 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import Logo from '@/components/Logo'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function ImprintPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border">
-        <div className="container mx-auto flex items-center justify-between px-6 py-4">
+        <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
           <Link to="/" className="transition hover:opacity-80">
             <Logo size="md" />
           </Link>
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-muted-foreground transition hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <ThemeToggle />
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-muted-foreground transition hover:text-foreground text-sm sm:text-base"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span className="hidden sm:inline">Back to Home</span>
+              <span className="sm:hidden">Back</span>
+            </Link>
+          </div>
         </div>
       </header>
 
       {/* Content */}
-      <div className="container mx-auto max-w-4xl px-6 py-16">
-        <div className="mb-12 text-center animate-fadeIn">
-          <h1 className="mb-4 text-5xl font-bold">Imprint</h1>
-          <p className="text-muted-foreground">Legal Information</p>
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 py-8 sm:py-16">
+        <div className="mb-8 sm:mb-12 text-center animate-fadeIn">
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold">Imprint</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">Legal Information</p>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-8 md:p-12 animate-fadeIn">
-          <div className="space-y-8">
+        <div className="rounded-xl border border-border bg-card p-6 sm:p-8 md:p-12 animate-fadeIn">
+          <div className="space-y-6 sm:space-y-8">
             {/* Information according to § 5 TMG */}
             <section>
-              <h2 className="mb-3 text-2xl font-semibold text-primary">
+              <h2 className="mb-3 text-xl sm:text-2xl font-semibold text-primary">
                 Information according to § 5 TMG
               </h2>
               <div className="text-muted-foreground">
